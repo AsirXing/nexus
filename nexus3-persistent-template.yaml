@@ -51,6 +51,18 @@ objects:
         - env:
           - name: CONTEXT_PATH
             value: /
+          - name: http_proxy
+            value: http://9.111.143.18:3228
+          - name: https_proxy
+            value: http://9.111.143.18:3228
+          - name: no_proxy
+            value: .apps.poplar.net,.cluster.local,.eng.platformlab.ibm.com,.k8s.poplar.net,.poplar.net,.svc,10.0.0.0/16,10.128.0.0/14,127.0.0.1,172.30.0.0/16,192.168.128.0/24,9.111.158.0/24,api-int.k8s.poplar.net,api.k8s.poplar.net,etcd-0.k8s.poplar.net,localhost
+          - name: HTTPS_PROXY
+            value: http://9.111.143.18:3228
+          - name: HTTPS_PROXY
+            value: http://9.111.143.18:3228
+          - name: NO_PROXY
+            value: .apps.poplar.net,.cluster.local,.eng.platformlab.ibm.com,.k8s.poplar.net,.poplar.net,.svc,10.0.0.0/16,10.128.0.0/14,127.0.0.1,172.30.0.0/16,192.168.128.0/24,9.111.158.0/24,api-int.k8s.poplar.net,api.k8s.poplar.net,etcd-0.k8s.poplar.net,localhost            
           image: ' '
           imagePullPolicy: IfNotPresent
           livenessProbe:
